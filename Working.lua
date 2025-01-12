@@ -1,29 +1,25 @@
--- You need 7 alts for this
--- replace the YourAltRobloxUsernameTorso, YourAltRobloxUsernameSecondTorso, YourAltRobloxUsernameHead, YourAltRobloxUsernameRightArm, YourAltRobloxUsernameLeftArm, YourAltRobloxUsernameRightLeg, YourAltRobloxUsernameLeftLeg to your alt accounts.
-
-
-game.Workspace.YourAltRobloxUsernameTorso.Humanoid.HipHeight = 5 -- Your torso
-game.Workspace.YourAltRobloxUsernameSecondTorso.Humanoid.HipHeight = 5 -- Your Second torso
-game.Workspace.YourAltRobloxUsernameHead.Humanoid.HipHeight = 6 -- Your Head
-game.Workspace.YourAltRobloxUsernameRightArm.Humanoid.HipHeight = 5 -- Your Right Arm
-game.Workspace.YourAltRobloxUsernameLeftArm.Humanoid.HipHeight = 5 -- Your Left Arm
+game.Workspace.InstanceGame1.Humanoid.HipHeight = 5 -- Your torso
+game.Workspace.InstanceGame2.Humanoid.HipHeight = 5 -- Your Second torso
+game.Workspace.InstanceGame3.Humanoid.HipHeight = 6 -- Your Head
+game.Workspace.InstanceGame4.Humanoid.HipHeight = 5 -- Your Right Arm
+game.Workspace.InstanceGame5.Humanoid.HipHeight = 5 -- Your Left Arm
 
 local mechParts = {
-	workspace.YourAltRobloxUsernameTorso, -- Your Torso
-	workspace.YourAltRobloxUsernameSecondTorso, -- Your Second Torso
-	workspace.YourAltRobloxUsernameLeftLeg, -- Your Left Leg
-	workspace.YourAltRobloxUsernameRightLeg, -- Your Right Leg
-	workspace.YourAltRobloxUsernameRightArm, -- Your Right Arm
-	workspace.YourAltRobloxUsernameLeftArm, -- Your Left Arm
+	workspace.InstanceGame1, -- Your Torso
+	workspace.InstanceGame2, -- Your Second Torso
+	workspace.InstanceGame5, -- Your Left Leg
+	workspace.InstanceGame4, -- Your Right Leg
+	workspace.InstanceGame4, -- Your Right Arm
+	workspace.InstanceGame5, -- Your Left Arm
 }
 
 local attachments = {
-	{redBlock = workspace.YourAltRobloxUsernameTorso.HumanoidRootPart, blueCube = workspace.YourAltRobloxUsernameHead.Torso, offset = CFrame.new(-1, -1, 0)},
-	{redBlock = workspace.YourAltRobloxUsernameSecondTorso.HumanoidRootPart, blueCube = workspace.YourAltRobloxUsernameHead.Torso, offset = CFrame.new(1, -1, 0)},
-	{redBlock = workspace.YourAltRobloxUsernameLeftLeg.HumanoidRootPart, blueCube = workspace.YourAltRobloxUsernameHead["Left Leg"], offset = CFrame.new(-0.5, -4, 0)},
-	{redBlock = workspace.YourAltRobloxUsernameRightLeg.HumanoidRootPart, blueCube = workspace.YourAltRobloxUsernameHead["Right Leg"], offset = CFrame.new(0.5, -4, 0)},
-	{redBlock = workspace.YourAltRobloxUsernameRightArm.HumanoidRootPart, blueCube = workspace.YourAltRobloxUsernameHead["Right Arm"], offset = CFrame.new(1.5, -1, 0)},
-	{redBlock = workspace.YourAltRobloxUsernameLeftArm.HumanoidRootPart, blueCube = workspace.YourAltRobloxUsernameHead["Left Arm"], offset = CFrame.new(-1.5, -1, 0)},
+	{redBlock = workspace.InstanceGame1.HumanoidRootPart, blueCube = workspace.InstanceGame3.Torso, offset = CFrame.new(-1, -1, 0)},
+	{redBlock = workspace.InstanceGame2.HumanoidRootPart, blueCube = workspace.InstanceGame3.Torso, offset = CFrame.new(1, -1, 0)},
+	{redBlock = workspace.InstanceGame5.HumanoidRootPart, blueCube = workspace.InstanceGame3["Left Leg"], offset = CFrame.new(-0.5, -4, 0)},
+	{redBlock = workspace.InstanceGame4.HumanoidRootPart, blueCube = workspace.InstanceGame3["Right Leg"], offset = CFrame.new(0.5, -4, 0)},
+	{redBlock = workspace.InstanceGame4.HumanoidRootPart, blueCube = workspace.InstanceGame3["Right Arm"], offset = CFrame.new(1.5, -1, 0)},
+	{redBlock = workspace.InstanceGame5.HumanoidRootPart, blueCube = workspace.InstanceGame3["Left Arm"], offset = CFrame.new(-1.5, -1, 0)},
 }
 
 local function applyZeroGravity()
